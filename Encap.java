@@ -47,6 +47,32 @@ class Employee
         this.salary=c;
     }
 }
+
+class Department
+{
+    private int depno;
+    private String depname;
+    
+    public int getdepno()
+    {
+        return depno;
+    }
+    
+    public String getdepname()
+    {
+        return depname;
+    }
+    
+    public void setdepno(int a)
+    {
+        depno=a;
+    }
+    public void setdepname(String b)
+    {
+        depname=b;
+    }
+}
+
 public class Encap {
 
     public static void main(String[] args) {
@@ -61,5 +87,13 @@ public class Encap {
         emp2.setsalary(2500000);
         System.out.println("Employee No:"+emp2.getempno()+" Employee Name:"+emp2.getname()+" Employee salary:"+emp2.getsalary());
         
+        Department dep1 = new Department();
+        dep1.setdepno(12345);
+        dep1.setdepname("IT");
+        System.out.println("Department No:"+dep1.getdepno()+" Department Name:"+dep1.getdepname());
+        Department dep2 = new Department();
+        dep2.setdepno(67890);
+        dep2.setdepname("Human Resources");
+        System.out.println("Department No:"+dep2.getdepno()+" Department Name:"+dep2.getdepname());
     }
 }
